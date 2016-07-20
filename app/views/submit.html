@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="/static/css/styles.css" type="text/css">
+
+	<title>Submit</title>
+</head>
+<body>
+<div>Thanks for submitting this form! You have submitted this form {{session['counter']}} times now</div>
+<u>Submitted Information:</u>
+<br>
+Name:{{name}}<br>
+Dojo Location:{{location}}<br>
+Favorite Langauge:{{langauge}}<br>
+Comment:{{comment}}<br>
+
+<form action="/" method=['GET']>
+	<input type="submit" value="Go Back">
+</form>
+</body>
+</html>
